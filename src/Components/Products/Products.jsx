@@ -56,7 +56,7 @@ const Products = () => {
         {products.map((product, index) => (
           <div className="product-card" key={index}>
             <img
-              src={product.image}
+              src={product.image} 
               alt={product.title}
               className="product-image"
             />
