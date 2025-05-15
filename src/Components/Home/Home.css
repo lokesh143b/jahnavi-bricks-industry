@@ -7,7 +7,7 @@
   
   .home {
     position: relative;
-    background: url("/src/assets/Classic Old Red Brick.jpeg") no-repeat center/cover;
+    background: url("../../../public/assets/Classic Old Red Brick.jpeg") no-repeat center/cover;
     height: 100vh;
     display: flex;
     align-items: center;

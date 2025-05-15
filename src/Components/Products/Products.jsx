@@ -1,54 +1,36 @@
 import React from "react";
 import "./Products.css";
+import redBricks02 from "../../../public/assets/red-bricks02.jpg";
+import redBricks03 from "../../../public/assets/red-bricks03.jpg";
+import redBricks11 from "../../../public/assets/red-bricks11.jpg";
+import redBricks16 from "../../../public/assets/red-bricks16.jpeg";
+
 
 const Products = () => {
-  // const products = [
-  //   {
-  //     title: "Standard Red Bricks",
-  //     description: "High durability and strength, ideal for all construction needs.",
-  //     image: "/src/assets/red-bricks02jpg.webp",
-  //   },
-  //   {
-  //     title: "Wire Cut Bricks",
-  //     description: "Smooth surface finish, perfect for exposed brick walls.",
-  //     image: "",
-  //   },
-  //   {
-  //     title: "Perforated Bricks",
-  //     description: "Lightweight, great for partition walls and better insulation.",
-  //     image: "",
-  //   },
-  // ];
 
   const products = [
     {
       title: "Handmade Red Bricks",
-      description:
-        "Traditional bricks made by hand, ideal for heritage-style construction.",
-      image: "/src/assets/red-bricks02.jpg",
+      description: "Traditional bricks made by hand, ideal for heritage-style construction.",
+      image: redBricks02,
     },
     {
       title: "Wire Cut Red Bricks",
-      description:
-        "Precision-cut red bricks with smooth edges and uniform shape.",
-      image:
-        "/src/assets/red-bricks03.jpg",
+      description: "Precision-cut red bricks with smooth edges and uniform shape.",
+      image: redBricks03,
     },
     {
       title: "Burnt Clay Bricks",
-      description:
-        "High-strength red bricks fired at high temperatures for superior durability.",
-      image:
-        "/src/assets/red-bricks11.jpg",
+      description: "High-strength red bricks fired at high temperatures for superior durability.",
+      image: redBricks11,
     },
     {
       title: "Exposed Red Bricks",
-      description:
-        "Stylish red bricks designed to be left exposed for architectural aesthetics.",
-      image:
-        "/src/assets/red-bricks16.jpeg",
+      description: "Stylish red bricks designed to be left exposed for architectural aesthetics.",
+      image: redBricks16,
     },
   ];
+  
   return (
     <div className="products-container" >
       <h1 className="products-title">Our Products</h1>

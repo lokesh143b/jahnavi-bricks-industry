@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./BrickCarousel.css";
 
-import brick1 from "../../assets/red-bricks01.jpg";
-import brick2 from "../../assets/red-bricks03.jpg";
-import brick3 from "../../assets/red-bricks03.jpg";
-import brick4 from "../../assets/red-bricks03.jpg";
-import brick5 from "../../assets/red-bricks03.jpg";
-import brick6 from "../../assets/red-bricks03.jpg";
+import brick1 from "../../../public/assets/red-bricks01.jpg";
+import brick2 from "../../../public/assets/red-bricks03.jpg";
+import brick3 from "../../../public/assets/red-bricks03.jpg";
+import brick4 from "../../../public/assets/red-bricks03.jpg";
+import brick5 from "../../../public/assets/red-bricks03.jpg";
+import brick6 from "../../../public/assets/red-bricks03.jpg";
 
 
 const BrickCarousel = () => {
