@@ -1,0 +1,214 @@
+.contact-container {
+    padding: 60px 20px;
+    background-color: #fff8f3; /* soft warm background */
+    color: #3a3a3a;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .contact-title h1 {
+    font-size: 2.2rem;
+    color: #8b3e2f;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  
+  .contact-title p {
+    font-size: 1.3rem;
+    color: #a67c52;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  .contact-left,
+  .contact-right {
+    gap: 8px;
+    flex: 1 1 400px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 35px;
+    box-shadow: 0 15px 30px rgba(139, 62, 47, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contact-left:hover,
+  .contact-right:hover {
+    box-shadow: 0 20px 40px rgba(139, 62, 47, 0.3);
+  }
+  
+  .contact-left h2 {
+    color: #8b3e2f;
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin-bottom: 25px;
+    letter-spacing: 1.1px;
+  }
+  
+  .contact-left p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #5b4a3c;
+    margin-bottom: 30px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #7a5a43;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-detail p {
+    margin: 0;           /* remove default margins on p */
+    line-height: 1;      /* tighten line height to match icon height */
+    display: flex;
+    align-items: center; /* vertically center text inline */
+  }
+  
+  
+  
+  .contact-detail svg {
+    flex-shrink: 0;
+    color: #b56840;
+    transition: color 0.3s ease;
+    vertical-align: middle;
+  }
+  
+  .contact-detail:hover {
+    color: #8b3e2f;
+  }
+  
+  .contact-detail:hover svg {
+    color: #8b3e2f;
+  }
+  
+  .contact-right label {
+    font-weight: 700;
+    color: #8b3e2f;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.7px;
+    user-select: none;
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 2px solid #d9b49a;
+    color: #4a3a2a;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline-offset: 2px;
+    resize: vertical;
+  }
+  
+  .contact-right input:focus,
+  .contact-right textarea:focus {
+    border-color: #8b3e2f;
+    box-shadow: 0 0 10px rgba(139, 62, 47, 0.3);
+  }
+  
+  .contact-right textarea {
+    min-height: 140px;
+  }
+  
+  .contact-right button {
+    background: linear-gradient(45deg, #a6572f, #d9955d);
+    border: none;
+    color: #fff;
+    padding: 16px 0;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(166, 87, 47, 0.5);
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+    text-transform: uppercase;
+  }
+  
+  .contact-right button:hover {
+    background: linear-gradient(45deg, #7e2f12, #bf6f2f);
+    box-shadow: 0 8px 30px rgba(126, 47, 18, 0.7);
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 1024px) {
+    .contact-section {
+      gap: 40px;
+    }
+    .contact-left,
+    .contact-right {
+      padding: 35px 25px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      gap: 35px;
+    }
+    .contact-container {
+      padding: 40px 16px;
+    }
+    .contact-title h1 {
+      font-size: 2rem;
+    }
+    .contact-title p {
+      font-size: 1.15rem;
+      max-width: 100%;
+    }
+    .contact-left h2 {
+      font-size: 1.8rem;
+    }
+    .contact-left p {
+      font-size: 1rem;
+    }
+    .contact-right label {
+      font-size: 1rem;
+    }
+    .contact-right input,
+    .contact-right textarea {
+      font-size: 1rem;
+      padding: 12px 14px;
+    }
+    .contact-right button {
+      font-size: 1.1rem;
+      padding: 14px 0;
+    }
+  }
+  

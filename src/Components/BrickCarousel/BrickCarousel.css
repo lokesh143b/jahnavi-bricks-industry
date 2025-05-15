@@ -1,0 +1,34 @@
+.carousel-container {
+  
+}
+
+.carousel-container .slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.carousel-container img {
+  width: 300px;
+  max-width: 90%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(90, 31, 15, 0.3);
+  user-select: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .carousel-container img {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .carousel-container img {
+    width: 90%;
+    height: 180px;
+  }
+}

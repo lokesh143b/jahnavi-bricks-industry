@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap");
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: #5a1f0f; /* dark red brick color */
+  color: white;
+  position: fixed;
+  z-index: 1;
+  opacity: 5;
+}
+.logo {
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffd700; /* golden color */
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #00000088;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+    padding: 6px 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  color: #ffd700; /* golden on hover */
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    background-color: #5a1f0f;
+    width: 200px;
+    border-radius: 8px;
+    z-index: 100;
+  }
+
+  .nav-links.open {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
