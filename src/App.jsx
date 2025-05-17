@@ -7,6 +7,7 @@ import NotFound from "./Components/NotFound/NotFound";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
+import BrickCarousel from "./Components/BrickCarousel/BrickCarousel";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
             </>
           }
         />
+        <Route path="gallery" element={<BrickCarousel />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

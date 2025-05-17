@@ -1,34 +1,130 @@
+.carousel-main-container{
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #f4f1ee;
+}
 .carousel-container {
-  
+  width: 90vw;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-container h1{
+  font-size: 2.2rem;
+    color: #e0dbda;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    text-align: center;
 }
 
 .carousel-container .slick-slide {
   display: flex !important;
   justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .carousel-container img {
   width: 300px;
-  max-width: 90%;
-  height: 250px;
+  height: 300px;
+  max-width: 320px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 15px rgba(90, 31, 15, 0.3);
-  user-select: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #e3dbd9; /* Red brick tone */
+  font-size: 28px;
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .carousel-container img {
-    width: 250px;
+    max-width: 260px;
     height: 200px;
   }
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+
+  .carousel-container h1{
+    font-size: 1.5rem;
+  }
+  
   .carousel-container img {
-    width: 90%;
+    max-width: 90%;
     height: 180px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+
+/* Dark brick wall background pattern using CSS */
+.carousel-main-container {
+  position: relative; /* to contain layers */
+  overflow: hidden;
+  background-color: #3e1f12; /* deep dark reddish-brown base */
+}
+
+/* The brick wall pattern */
+.carousel-main-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(90deg, #ab573b 25%, transparent 25%),
+    linear-gradient(#ab573b 25%, transparent 25%);
+  background-size: 60px 30px;
+  background-position: 0 0, 30px 15px;
+  opacity: 0.4; /* stronger opacity for better brick visibility */
+  pointer-events: none;
+  z-index: 0;
+
+  /* Animate the background position to move bricks all directions smoothly */
+  animation: moveBricksAllDirections 10s linear infinite;
+}
+
+/* Animate bricks moving continuously in all directions */
+@keyframes moveBricksAllDirections {
+  0% {
+    background-position: 0 0, 30px 15px;
+  }
+  25% {
+    background-position: 30px 0, 60px 15px;
+  }
+  50% {
+    background-position: 30px 30px, 60px 45px;
+  }
+  75% {
+    background-position: 0 30px, 30px 45px;
+  }
+  100% {
+    background-position: 0 0, 30px 15px;
   }
 }

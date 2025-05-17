@@ -1,10 +1,12 @@
 .contact-container {
-    padding: 60px 20px;
+    padding: 80px 20px;
     background-color: #fff8f3; /* soft warm background */
     color: #3a3a3a;
     font-family: 'Poppins', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
+    min-height: 100vh;
+    height: auto;
   }
   
   .contact-title {
@@ -182,11 +184,9 @@
       flex-direction: column;
       gap: 35px;
     }
-    .contact-container {
-      padding: 40px 16px;
-    }
+    
     .contact-title h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     .contact-title p {
       font-size: 1.15rem;

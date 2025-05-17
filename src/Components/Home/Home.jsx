@@ -1,8 +1,11 @@
 import React from "react";
 import "./Home.css";
-import BrickCarousel  from "../BrickCarousel/BrickCarousel"
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="home">
       <div className="overlay" />
@@ -25,9 +28,9 @@ const Home = () => {
           </div>
         </div>
 
-        {/* brick corousel */} 
+        {/* Our gallery */}
+        <button onClick={() => navigate("/gallery")}>OUR GALLERY</button>
 
-      
       </div>
     </div>
   );

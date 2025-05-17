@@ -7,13 +7,15 @@
   
   .home {
     position: relative;
-    background: url("../../../public/assets/Classic Old Red Brick.jpeg") no-repeat center/cover;
-    height: 100vh;
+    background: url("../../../public/assets/red-bricks18.jpg") no-repeat center/cover;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
+    padding-top: 70px;
     overflow: hidden;
   }
   
@@ -121,6 +123,49 @@
   
     .slogan {
       font-size: 1rem;
+    }
+  }
+  
+
+
+  .home-content button {
+    background-color: var(--gold);
+    color: var(--brick-red);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin-top: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  
+  .home-content button:hover {
+    background-color: var(--brick-red);
+    color: var(--gold);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(90, 31, 15, 0.7);
+  }
+  
+  /* Responsive button styling */
+  @media (max-width: 768px) {
+    .home-content button {
+      width: 100%;
+      padding: 14px 0;
+      font-size: 1.2rem;
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-content button {
+      font-size: 1rem;
+      padding: 12px 0;
     }
   }
   

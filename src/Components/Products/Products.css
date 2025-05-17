@@ -1,7 +1,9 @@
 .products-container {
-    padding: 60px 30px;
+  padding: 80px 20px;
     background-color: #f4f1ee;
     text-align: center;
+    min-height: 100vh;
+    height: auto;
   }
   
   .products-title {

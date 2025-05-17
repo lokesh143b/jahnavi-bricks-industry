@@ -3,7 +3,7 @@ import "./Products.css";
 import redBricks02 from "../../../public/assets/red-bricks02.jpg";
 import redBricks03 from "../../../public/assets/red-bricks03.jpg";
 import redBricks11 from "../../../public/assets/red-bricks11.jpg";
-import redBricks16 from "../../../public/assets/red-bricks16.jpeg";
+import redBricks16 from "../../../public/assets/red-bricks16.jpg";
 
 
 const Products = () => {
